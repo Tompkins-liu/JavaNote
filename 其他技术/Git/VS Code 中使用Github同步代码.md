@@ -16,66 +16,66 @@
 
 1. 创建**repository**
 
-	1. 本地初始化
+   1. 本地初始化
 
-		`git init`
+      `git init`
 
-	1. 检出仓库
+   1. 检出仓库
 
-		`git clone /path/to/repository` 本地检出
+      `git clone /path/to/repository` 本地检出
 
-		`git clone username@host:/path/to/repository` 远程检出
+      `git clone username@host:/path/to/repository` 远程检出
 
-1. **添加**和**提交**
+2. **添加**和**提交**
 
-	1. 将文件添加到暂存区
+   1. 将文件添加到暂存区
 
-		`git add <filename>` 或`git add *`
+      `git add <filename>` 或`git add *`
 
-	1. 实际提交改动
+   1. 实际提交改动
 
-		`git commit -m "代码提交信息"`
+      `git commit -m "代码提交信息"`
 
-		此时，你的改动已经提交到了HEAD，但还没有同步到远程仓库。
+      此时，你的改动已经提交到了HEAD，但还没有同步到远程仓库。
 
-1. 推送改动
+3. 推送改动
 
-	`git push origin master` 其中master可以换成你想推送的任何分支。
+   `git push origin master` 其中master可以换成你想推送的任何分支。
 
 4. 分支操作
 
-	1. 创建分支
+   1. 创建分支
 
-		`git checkout -b feature_x`
+      `git checkout -b feature_x`
 
-	1. 切换回主分支
+   2. 切换回主分支
 
-		`git checkout master`
+      `git checkout master`
 
-	1. 把新建的分支删掉
+   3. 把新建的分支删掉
 
-		`git branch -d feature_x`
+      `git branch -d feature_x`
 
-	1. 推送分支到远程仓库
+   4. 推送分支到远程仓库
 
-		`git push origin <branch>`
+      `git push origin <branch>`
 
-4.  更新与合并
+5. 更新与合并
 
-	1. 更新你的本地仓库至最新改动
+    1. 更新你的本地仓库至最新改动
 
-		`git pull`
+       `git pull`
 
-	2. 合并其他分支到当前分支
+    2. 合并其他分支到当前分支
 
-		`git merge <branch>`
+       `git merge <branch>`
 
-		有时合并会出现**冲突**，需要手动修改这些文件来合并**冲突**，改完后执行`git add <filename>` 将它们标记为合并成功。
+       有时合并会出现**冲突**，需要手动修改这些文件来合并**冲突**，改完后执行`git add <filename>` 将它们标记为合并成功。
 
-4. 其他操作
+6. 其他操作
 
-	丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它
+   丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它
 
-	`git fetch origin`
+   `git fetch origin`
 
-	`git reset --hard origin/master`
+   `git reset --hard origin/master`
