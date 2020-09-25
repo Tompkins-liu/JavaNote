@@ -1,4 +1,3 @@
 # JavaNote
 
-测试分支，试图合并到master分支
-[aaaa](JavaCode/JavaStudy/src/App.java)
+这是我自己的java学习笔记
